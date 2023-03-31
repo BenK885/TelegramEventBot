@@ -1,0 +1,13 @@
+[Unit]
+Description=Telegram Event Bot
+After=network.target
+
+[Service]
+Type=simple
+User=eventbot
+WorkingDirectory=/home/eventbot/eventBot
+ExecStart=/usr/bin/yarn start
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
