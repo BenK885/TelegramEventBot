@@ -5,7 +5,7 @@ export function all<Result>(db: Database, query: string, params?: Param[]): Prom
     if (params == undefined) {
       params = [];
     }
-    db.all(query, params, function (err, rows) {
+    db.all(query, params, function (err, rows: Result[]) {
       if (err) {
         reject('Error: ' + err.message);
       }
@@ -21,7 +21,7 @@ export function get<Result>(db: Database, query: string, params?: Param[]): Prom
     if (params == undefined) {
       params = [];
     }
-    db.get(query, params, function (err, rows) {
+    db.get(query, params, function (err, rows: Result) {
       if (err) {
         reject('Error: ' + err.message);
       }
