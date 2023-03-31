@@ -1,11 +1,11 @@
-scp index.ts ziedav@delphinus.uberspace.de:~/eventBot/
+scp ../index.ts eventbot@ubuntudevserv:~/eventBot/
 
-scp -r src ziedav@delphinus.uberspace.de:~/eventBot/
-scp -r scripts ziedav@delphinus.uberspace.de:~/eventBot/
+scp -r ../src eventbot@ubuntudevserv:~/eventBot/
+scp -r ../scripts eventbot@ubuntudevserv:~/eventBot/
 
-scp package.json ziedav@delphinus.uberspace.de:~/eventBot/
-scp yarn.lock ziedav@delphinus.uberspace.de:~/eventBot/
+scp ../package.json eventbot@ubuntudevserv:~/eventBot/
+scp ../yarn.lock eventbot@ubuntudevserv:~/eventBot/
 
-scp tsconfig.json ziedav@delphinus.uberspace.de:~/eventBot/
-scp .eslintrc.json ziedav@delphinus.uberspace.de:~/eventBot/
-scp .eslintignore ziedav@delphinus.uberspace.de:~/eventBot/
+scp ../tsconfig.json eventbot@ubuntudevserv:~/eventBot/
+scp ../.eslintrc.json eventbot@ubuntudevserv:~/eventBot/
+scp ../.eslintignore eventbot@ubuntudevserv:~/eventBot/
