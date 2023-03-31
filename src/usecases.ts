@@ -27,7 +27,7 @@ function rsvpButtons(rsvp_label: string, cancel_label: string) {
 }
 
 function deleteMessage(bot: TelegramBot, message: Message): void {
-  bot.deleteMessage(message.chat.id, message.message_id.toString());
+  bot.deleteMessage(message.chat.id, message.message_id);
 }
 
 export async function changeRSVPForUser(

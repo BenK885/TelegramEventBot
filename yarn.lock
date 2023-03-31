@@ -106,12 +106,14 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
-"@types/node-telegram-bot-api@^0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@types/node-telegram-bot-api/-/node-telegram-bot-api-0.51.1.tgz#adc9cf48e3dd3a35569c01de28a7c71aae40fc75"
+"@types/node-telegram-bot-api@^0.61.0":
+  version "0.61.5"
+  resolved "https://registry.yarnpkg.com/@types/node-telegram-bot-api/-/node-telegram-bot-api-0.61.5.tgz#a6eeaa2b06a7728553ddbf5de276d883a9351cce"
+  integrity sha512-zXSObMi2ihTp8yjjFCnEFQjv6k65SN4L6CfNYhcrGEVh5AeMSjRUB0NXBzXKbDRs8KzZpzKl1eSnKJKnFLrm2A==
   dependencies:
     "@types/node" "*"
     "@types/request" "*"
+    eventemitter3 ">=3.0.0"
 
 "@types/node@*", "@types/node@^14.14.37":
   version "14.14.37"
@@ -402,7 +404,7 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
-bluebird@^3.5.0, bluebird@^3.5.1:
+bluebird@^3.5.0:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
 
@@ -607,9 +609,10 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^3.1.0, debug@^3.2.6:
+debug@^3.2.6, debug@^3.2.7:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
+  integrity sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==
   dependencies:
     ms "^2.1.1"
 
@@ -648,7 +651,7 @@ delegates@^1.0.0:
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
   integrity sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=
 
-depd@^1.1.1, depd@~1.1.2:
+depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
 
@@ -866,6 +869,11 @@ esutils@^2.0.2:
 etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
+
+eventemitter3@>=3.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-5.0.0.tgz#084eb7f5b5388df1451e63f4c2aafd71b217ccb3"
+  integrity sha512-riuVbElZZNXLeLEoprfNYoDSwTBRR44X3mnhdI1YcnENpWTCsTTVZ2zFuqQcpoyqPQIUXdiPEU0ECAq0KQRaHg==
 
 eventemitter3@^3.0.0:
   version "3.1.2"
@@ -1651,15 +1659,14 @@ node-pre-gyp@^0.11.0:
     semver "^5.3.0"
     tar "^4"
 
-node-telegram-bot-api@^0.52.0:
-  version "0.52.0"
-  resolved "https://registry.yarnpkg.com/node-telegram-bot-api/-/node-telegram-bot-api-0.52.0.tgz#ebe7947f78545dcd8b0bc162c0ec7b3e839c442a"
+node-telegram-bot-api@^0.61.0:
+  version "0.61.0"
+  resolved "https://registry.yarnpkg.com/node-telegram-bot-api/-/node-telegram-bot-api-0.61.0.tgz#e5d10e219e4d3e8d347dbafd0ded0262409cf4cf"
+  integrity sha512-BZXd8Bh2C5+uBEQuuI3FD7TFJF3alV+6oFQt8CNLx3ldX/hsd+NYyllTX+Y+5X0tG+xtcRQQjbfLgz/4sRvmBQ==
   dependencies:
     array.prototype.findindex "^2.0.2"
     bl "^1.2.3"
-    bluebird "^3.5.1"
-    debug "^3.1.0"
-    depd "^1.1.1"
+    debug "^3.2.7"
     eventemitter3 "^3.0.0"
     file-type "^3.9.0"
     mime "^1.6.0"
