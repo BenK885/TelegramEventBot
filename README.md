@@ -35,7 +35,7 @@ Currently, you can't edit or delete events. If you are a developer, Pull Request
 1. Clone this repository. 
 2. In order to be able to send and receive message via Telegram you first need to create a bot: [Create a bot with botfather](https://core.telegram.org/bots#3-how-do-i-create-a-bot). There you get a token.
 3. In the terminal, go to the app's folder with `cd createEventsBot`.
-4. Create a database by running `yarn install`, `mkdir data` and `npx sqlite3 ./data/development.db`.
+4. Create a database by running `yarn install`, `mkdir data` and `sqlite3 ./data/development.db`.
 5. Create the database-tables by running the following three commands:
 ```
 sqlite3 ./data/development.db
