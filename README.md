@@ -1,3 +1,8 @@
+# Currently running Telegram bot instances
+
+@events_creator_bot
+@em_lokale_gruppen_bot
+
 # Create events in Telegram groups (bot)
 
 With this bot you can create events in Telegram groups. People can RSVP to the event just by clicking on "zusagen" (it's currently only available in German).
