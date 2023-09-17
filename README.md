@@ -1,7 +1,7 @@
-# Currently running Telegram bot instances
+# Currently running instances
 
-@events_creator_bot
-@em_lokale_gruppen_bot
+[@events_creator_bot](https://telegram.me/events_creator_bot)
+[@em_lokale_gruppen_bot](https://telegram.me/em_lokale_gruppen_bot)
 
 # Create events in Telegram groups (bot)
 
