@@ -8,6 +8,8 @@ User=eventbot
 WorkingDirectory=/home/eventbot/eventBot
 ExecStart=/usr/bin/yarn start
 Restart=always
+StandardOutput=file:/var/log/eventbot.log
+StandardError=file:/var/log/eventbot-error.log
 
 [Install]
 WantedBy=multi-user.target
